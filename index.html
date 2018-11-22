@@ -21,9 +21,62 @@
         .container{
             display: grid;
             grid-template-columns: 1fr;
-            padding-left: 5vw;
+            padding-left: 3vw;
             height: 70vh;
-            margin-top: 25vh;
+            margin-top: 12vh;
+            
+        }
+        
+        .container .balls{
+            border: 5px solid red;
+            padding: 10px;
+           margin-bottom: 20px;
+            width: 240px;
+        
+        }
+        
+         .container .stars{
+            border: 5px solid red;
+            padding: 10px;
+               width: 240px;
+               margin-bottom: 20px;
+        
+        }
+        
+         .container .light{
+            border: 5px solid red;
+            padding: 10px;
+               width: 240px;
+              margin-bottom: 20px;
+        
+        }
+        
+          .container .lolly{
+            border: 5px solid red;
+            padding: 10px;
+                width: 240px;
+               margin-bottom: 20px;
+        
+        }
+        
+        .container .desc{
+              border: 5px solid red;
+            padding: 10px;
+                width: 240px;
+               margin-bottom: 20px; 
+            background-color: red;
+        }
+        
+        .container .desc h1{
+            color: white;
+            font-family: "Oswald",'sans-serif';
+            font-weight: 100;
+        }
+        .container .balls h1{
+        color: red;
+            font-family: "Roboto";
+            font-weight: 100;
+
         }
         #ball{
             width: 50px;
@@ -148,9 +201,14 @@
     
     
     <div class="container">
+      
+      <div class="desc">
+          
+          <h1> Pick your decoration</h1>
+      </div>
        
        <div class="balls">
-      
+
         <img id="ball" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="bombka.png">
         <img id="ball2" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="bombka.png">
          <img id="ball3" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="bombka.png">
@@ -158,12 +216,12 @@
           
         </div>
         
-               <div class="starts">
+               <div class="stars">
                
                 <img id="star1" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
                  <img id="star2" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
                   <img id="star3" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
-                   <img id="star4" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
+              
                
         </div>
         
@@ -177,7 +235,6 @@
            
             <img id="light4" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="light.png">
             
-             <img id="light5" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="light.png">
         </div>
               
                      <div class="lolly">
