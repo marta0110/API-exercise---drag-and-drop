@@ -10,11 +10,21 @@
         body{
             background-image: url(4472066811b950fa3da65c8d8ae35622.jpg);
             width:100vw;
-            height: auto;
+            height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     
+        
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-left: 5vw;
+            height: 70vh;
+            margin-top: 25vh;
+        }
         #ball{
             width: 50px;
             height: auto;
@@ -26,9 +36,33 @@
             height: auto;
             cursor: pointer;
         }
-    
-           #ball3{
+        
+          #ball3{
             width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
+    
+           #star1{
+            width: 60px;
+            height: auto;
+            cursor: pointer;
+        }
+        
+            #star2{
+            width: 60px;
+            height: auto;
+            cursor: pointer;
+        }
+        
+            #star3{
+            width: 60px;
+            height: auto;
+            cursor: pointer;
+        }
+        
+            #star4{
+            width: 60px;
             height: auto;
             cursor: pointer;
         }
@@ -67,6 +101,37 @@
             height: auto;
             cursor: pointer;
         }
+        
+           #lolly{
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
+    
+
+           #lolly2{
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
+    
+           #lolly3{
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
+    
+           #lolly4{
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
+    
+           #lolly5{
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+        }
     
         #treeContainer .tree{
             width: 600px;
@@ -83,11 +148,26 @@
     
     
     <div class="container">
-        
+       
+       <div class="balls">
+      
         <img id="ball" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="bombka.png">
         <img id="ball2" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="bombka.png">
          <img id="ball3" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="bombka.png">
-          <img id="ball3" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
+         
+          
+        </div>
+        
+               <div class="starts">
+               
+                <img id="star1" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
+                 <img id="star2" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
+                  <img id="star3" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
+                   <img id="star4" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="star.gif">
+               
+        </div>
+        
+           <div class="light">
         
          <img id="light" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="light.png">
          
@@ -98,6 +178,18 @@
             <img id="light4" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="light.png">
             
              <img id="light5" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="light.png">
+        </div>
+              
+                     <div class="lolly">
+               <img id="lolly" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="lollipop.png">
+               
+               
+               <img id="lolly2" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="lollipop.png">
+               
+               <img id="lolly3" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="lollipop.png">
+               
+               <img id="lolly4" draggable="true" ondragend="dragend_handler(event)" ondragstart="dragstart_handler(event)" src="lollipop.png">
+        </div>
     </div>
     
     <div id="treeContainer" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
